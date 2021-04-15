@@ -1,0 +1,111 @@
+.grid-contain {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1.5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: " . abtme abtmed ."
+        ". exp expdes ."
+        ". exp2 expdes2 ."
+        ". exp3 expdes3 ."
+        ". education int ."
+        ". contactform contactform .";
+    height: 100vh;
+    font-size: 20px;
+}
+.abtme {
+    grid-area: abtme;
+}
+.abtmed {
+    grid-area: abtmed;
+}
+.exp {
+    grid-area: exp;
+}
+
+.exp2 {
+    grid-area: exp2;
+}
+
+.exp3 {
+    grid-area: exp3;
+}
+
+.expdes {
+    grid-area: expdes;
+}
+
+.expdes2 {
+    grid-area: expdes2;
+}
+
+.expdes3 {
+    grid-area: expdes3;
+}
+
+.int {
+    grid-area: int;
+}
+
+.education {
+    grid-area: education;
+}
+
+.contactform {
+    grid-area: contactform;
+}
+
+img.abtme {
+    border-radius: 0%;
+}
+
+.abtme, .abtmed {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.exp, .exp2, .exp3, .expdes, .expdes2, .expdes3 {
+    justify-self: center;
+}
+
+.int, .education {
+    align-self: center;
+    justify-self: center;
+}
+
+
+/* Style the form element with a border around it */
+form {
+    border: 4px solid #f1f1f1;
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #3d73a7;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
